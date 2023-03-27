@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bgimage.webp');
+    background-size: cover;
+    background-repeat:round;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    padding: 20px;
+  }
+  
+  .navbar-transparent {
+    background-color: transparent !important;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  
+  .center-image {
+    text-align: center;
+    margin-bottom: 0px;
+    size: 400px 400px;
+  }
+  
+/* yaha se leke keyframes ke neeche tk ka sirf COMING SOON ki animation k liye hai */
+  .coming-soon {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    font-size: 150px;
+    font-style: italic;
+    color: #fff;
+    transform: translate(-50%, -50%) scale(0);
+    white-space: nowrap;
+    animation: appear 2s ease-in-out forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translate(-53%, -50%) scale(1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+/* yaha tak hai animation  */
+  .youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 220px;
+  }
+  
+  .youtube img {
+    width: 80px;
+  }
+  
+  .youtube p{
+    color: white;
+    font-size:30px ;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .instagram img {
+    width: 65px;
+  }
+  
+.instagram p{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.mail {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.first {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px;
+    border-color: #fff;
+    font: 'Futura Heavy Italic BT', sans-serif;
+    position: relative;
+  }
+
+.second {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  
+  /* iske upar styling hai, neeche responsiveness ke liye hai */
+ /* For screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+    .navbar {
+      padding: 10px;
+    }
+    .navbar-brand {
+      font-size: 20px;
+    }
+    .nav-link {
+      margin-left: 10px;
+    }
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    .center-image {
+      size: 300px 300px;
+    }
+  }
+  
+  /* For screens larger than 600px */
+  /* @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+    .navbar {
+      padding: 20px;
+    }
+    .navbar-brand {
+      font-size: 24px;
+    }
+    .nav-link {
+      margin-left: 20px;
+    }
+    .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    .center-image {
+      size: 400px 400px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .coming-soon {
+      font-size: 80px;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .coming-soon {
+      font-size: 100px;
+      top: 65%;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .coming-soon {
+      font-size: 120px;
+      top: 75%;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .coming-soon {
+      font-size: 150px;
+      top: 75%;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
